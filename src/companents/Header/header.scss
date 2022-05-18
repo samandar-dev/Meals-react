@@ -1,0 +1,90 @@
+.header {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.header__img {
+  width: 110%;
+  height: 100%;
+  background-image: url("https://react-app099.netlify.app/static/media/meals.2971f633.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transform: rotateZ(-5deg) translate(-20px, -80px);
+}
+
+.header__container {
+  width: 100%;
+  max-width: 1560px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header__inner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: #8a2b06;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 25%);
+  z-index: 50;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 18px;
+}
+
+.header__title {
+  font-size: 42px;
+  line-height: 40px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.header__shop_btn {
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 60px;
+  color: #fff;
+  background-color: #4d1601;
+  border-radius: 25px;
+  cursor: pointer;
+  border: none;
+
+  & .shop__btn_num {
+    background-color: #b94517;
+    padding: 8px 20px;
+    border-radius: 25px;
+    margin-left: 1rem;
+    font-weight: 700;
+  }
+
+  & .shop__btn-icon {
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+  }
+}
+
+.animBtn {
+  transform: scale(1);
+  animation: animBTN 0.5s 1;
+}
+
+@keyframes animBTN {
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
